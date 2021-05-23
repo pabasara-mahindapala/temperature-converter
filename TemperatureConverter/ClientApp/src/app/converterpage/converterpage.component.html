@@ -1,0 +1,49 @@
+<h1 id="tableLabel">Converter</h1>
+
+<p>Enter the temperature value select the unit and click Convert</p>
+
+<form (ngSubmit)="convert()" #tempForm="ngForm">
+  <div class="form-group">
+    <label for="value">Temperature Value</label>
+    <input type="text" class="form-control" id="value" required [(ngModel)]="valueModel" name="value" #value="ngModel">
+    <div [hidden]="value.valid || value.pristine" class="alert alert-danger">
+      Temperature Value is required
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="unit">Unit</label>
+    <select class="form-control" id="unit" required [(ngModel)]="unitModel" name="unit" #unit="ngModel">
+      <option value="celsius">Celsius</option>
+      <option value="kelvin">Kelvin</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <div [hidden]="unit.valid || unit.pristine" class="alert alert-danger">
+      Unit is required
+    </div>
+  </div>
+
+  <button (click)="convert()" type="submit" class="btn btn-success mr-1"
+    [disabled]="!tempForm.form.valid">Convert</button>
+  <button type="button" class="btn btn-secondary" (click)="clear(); tempForm.reset()">Clear</button>
+
+</form>
+
+<p *ngIf="converting"><em>Converting...</em></p>
+
+<br><br>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="response">
+  <thead>
+    <tr>
+      <th>Unit</th>
+      <th>Temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of response">
+      <td>{{ r.unit | titlecase}}</td>
+      <td>{{ r.temperature | number }}</td>
+    </tr>
+  </tbody>
+</table>

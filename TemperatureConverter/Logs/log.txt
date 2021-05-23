@@ -1,0 +1,38 @@
+05/23/2021 17:40:13 +05:30 Application Starting.
+05/23/2021 17:45:12 +05:30 Application Starting.
+05/23/2021 17:45:43 +05:30 API called
+05/23/2021 17:45:43 +05:30 Converting value 55 celsius
+05/23/2021 17:45:43 +05:30 Successfully converted 55 celsius
+05/23/2021 17:45:43 +05:30 API called
+05/23/2021 17:45:43 +05:30 Converting value 55 celsius
+05/23/2021 17:45:43 +05:30 Successfully converted 55 celsius
+05/23/2021 17:45:47 +05:30 API called
+05/23/2021 17:45:47 +05:30 Converting value 55 kelvin
+05/23/2021 17:45:47 +05:30 Successfully converted 55 kelvin
+05/23/2021 17:45:47 +05:30 API called
+05/23/2021 17:45:47 +05:30 Converting value 55 kelvin
+05/23/2021 17:45:47 +05:30 Successfully converted 55 kelvin
+05/23/2021 17:45:49 +05:30 API called
+05/23/2021 17:45:49 +05:30 Converting value 55 fahrenheit
+05/23/2021 17:45:49 +05:30 Successfully converted 55 fahrenheit
+05/23/2021 17:45:49 +05:30 API called
+05/23/2021 17:45:49 +05:30 Converting value 55 fahrenheit
+05/23/2021 17:45:49 +05:30 Successfully converted 55 fahrenheit
+05/23/2021 17:45:54 +05:30 API called
+05/23/2021 17:45:54 +05:30 Converting value 100.5 fahrenheit
+05/23/2021 17:45:54 +05:30 Successfully converted 100.5 fahrenheit
+05/23/2021 17:45:54 +05:30 API called
+05/23/2021 17:45:54 +05:30 Converting value 100.5 fahrenheit
+05/23/2021 17:45:54 +05:30 Successfully converted 100.5 fahrenheit
+05/23/2021 17:45:56 +05:30 API called
+05/23/2021 17:45:56 +05:30 Converting value 100.5 celsius
+05/23/2021 17:45:56 +05:30 Successfully converted 100.5 celsius
+05/23/2021 17:45:56 +05:30 API called
+05/23/2021 17:45:56 +05:30 Converting value 100.5 celsius
+05/23/2021 17:45:56 +05:30 Successfully converted 100.5 celsius
+05/23/2021 17:45:58 +05:30 API called
+05/23/2021 17:45:58 +05:30 Converting value 100.5 kelvin
+05/23/2021 17:45:58 +05:30 Successfully converted 100.5 kelvin
+05/23/2021 17:45:58 +05:30 API called
+05/23/2021 17:45:58 +05:30 Converting value 100.5 kelvin
+05/23/2021 17:45:58 +05:30 Successfully converted 100.5 kelvin

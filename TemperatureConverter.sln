@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureConverter", "TemperatureConverter\TemperatureConverter.csproj", "{3A6B5128-B1E2-4D1F-9D94-BDCD4B46016D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A6B5128-B1E2-4D1F-9D94-BDCD4B46016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6B5128-B1E2-4D1F-9D94-BDCD4B46016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6B5128-B1E2-4D1F-9D94-BDCD4B46016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6B5128-B1E2-4D1F-9D94-BDCD4B46016D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5C3F81A-D0BD-4B03-A139-D2544C0482D1}
+	EndGlobalSection
+EndGlobal
