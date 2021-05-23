@@ -4,7 +4,7 @@ namespace TemperatureConverter.Services
 {
     public interface IConverterService
     {
-        IEnumerable<TemperatureResult> Convert(string unit, int value);
+        IEnumerable<TemperatureResult> Convert(string unit, double value);
 
     }
 }

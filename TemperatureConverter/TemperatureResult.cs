@@ -6,6 +6,6 @@ namespace TemperatureConverter
     {
         public string Unit { get; set; }
 
-        public int Temperature { get; set; }
+        public double Temperature { get; set; }
     }
 }

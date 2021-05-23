@@ -7,7 +7,7 @@ namespace TemperatureConverter.Services
 {
     public class ConverterService : IConverterService
     {
-        public IEnumerable<TemperatureResult> Convert(string unit, int value)
+        public IEnumerable<TemperatureResult> Convert(string unit, double value)
         {
             var response = new List<TemperatureResult>();
 
@@ -19,14 +19,14 @@ namespace TemperatureConverter.Services
                         response.Add(new TemperatureResult
                         {
                             Unit = "kelvin",
-                            Temperature = value + 273
+                            Temperature = value + 273.15
                         });
                         break;
                     case "fahrenheit":
                         response.Add(new TemperatureResult
                         {
                             Unit = "kelvin",
-                            Temperature = ((value - 32) * 5 / 9) + 273
+                            Temperature = ((value - 32) * 5 / 9) + 273.15
                         });
                         break;
                     default:
@@ -42,7 +42,7 @@ namespace TemperatureConverter.Services
                         response.Add(new TemperatureResult
                         {
                             Unit = "celsius",
-                            Temperature = value - 273
+                            Temperature = value - 273.15
                         });
                         break;
                     case "fahrenheit":
@@ -65,7 +65,7 @@ namespace TemperatureConverter.Services
                         response.Add(new TemperatureResult
                         {
                             Unit = "fahrenheit",
-                            Temperature = (value - 273) * 9 / 5 + 32
+                            Temperature = (value - 273.15) * 9 / 5 + 32
                         });
                         break;
                     case "celsius":

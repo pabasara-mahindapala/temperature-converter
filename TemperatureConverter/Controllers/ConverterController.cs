@@ -24,7 +24,7 @@ namespace TemperatureConverter.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<TemperatureResult> Get(string unit, int value)
+        public IEnumerable<TemperatureResult> Get(string unit, double value)
         {
             return _converterService.Convert(unit, value);
         }
