@@ -7,14 +7,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { ConverterComponent } from './converter/onverter.component';
+import { ConverterPageComponent } from './converterpage/converterpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    ConverterComponent
+    ConverterPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -22,7 +22,7 @@ import { ConverterComponent } from './converter/onverter.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'converter', component: ConverterComponent },
+      { path: 'converterpage', component: ConverterPageComponent },
     ])
   ],
   providers: [],

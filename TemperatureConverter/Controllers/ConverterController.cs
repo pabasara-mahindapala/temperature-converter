@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TemperatureConverter.Services;
 
 namespace TemperatureConverter.Controllers
 {
@@ -12,20 +13,20 @@ namespace TemperatureConverter.Controllers
     public class ConverterController : ControllerBase
     {
         private readonly ILogger<ConverterController> _logger;
+        private readonly IConverterService _converterService;
 
-        public ConverterController(ILogger<ConverterController> logger)
+        public ConverterController(
+            ILogger<ConverterController> logger,
+            IConverterService converterService)
         {
             _logger = logger;
+            _converterService = converterService;
         }
 
         [HttpGet]
-        public TemperatureResult Get()
+        public IEnumerable<TemperatureResult> Get(string unit, int value)
         {
-            return new TemperatureResult
-            {
-                Unit = "kelvin",
-                Temperature = 60
-            };
+            return _converterService.Convert(unit, value);
         }
     }
 }
