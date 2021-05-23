@@ -43,7 +43,7 @@
   <tbody>
     <tr *ngFor="let r of response">
       <td>{{ r.unit | titlecase}}</td>
-      <td>{{ r.temperature }}</td>
+      <td>{{ r.temperature | number }}</td>
     </tr>
   </tbody>
 </table>
