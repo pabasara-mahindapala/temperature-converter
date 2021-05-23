@@ -26,6 +26,7 @@ namespace TemperatureConverter.Controllers
         [HttpGet]
         public IEnumerable<TemperatureResult> Get(string unit, double value)
         {
+            _logger.LogInformation("API called");
             return _converterService.Convert(unit, value);
         }
     }
