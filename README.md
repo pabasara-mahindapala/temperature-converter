@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <h3 align="center">Temperature Converter</h3>
+  <h1 align="center">Temperature Converter</h1>
 
   <p align="center">
     Web application that allows a user to convert between Celsius, Kelvin, and Fahrenheit temperature values
